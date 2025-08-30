@@ -1,0 +1,22 @@
+:root{
+  --brand:#6f42c1;
+  --brand-2:#9b7be7;
+  --text-hero:#f8f9fa;
+}
+body{font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";}
+.brand-gradient{background: linear-gradient(135deg, var(--brand), var(--brand-2));}
+.hero{position: relative; min-height:80vh; color: var(--text-hero); background:url('https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;}
+.hero::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(22,22,26,.55), rgba(22,22,26,.7));}
+.hero-content{position:relative; z-index:2}
+.glass{backdrop-filter: blur(8px); background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.2)}
+.section-title{font-family: Montserrat, Inter, sans-serif}
+.badge-type{font-weight:600}
+.sticky-cta{position:fixed; right:1rem; bottom:1rem; z-index:1030}
+.avatar{width:64px;height:64px;border-radius:50%;object-fit:cover}
+.scroll-top{position:fixed; right:1rem; bottom:4.5rem; z-index:1030; display:none}
+html{scroll-behavior:smooth}
+.card-hover{transition: transform .2s ease, box-shadow .2s ease}
+.card-hover:hover{transform: translateY(-2px); box-shadow: 0 0.5rem 1.25rem rgba(0,0,0,.1)}
+.bi{vertical-align:-.125em}
+[data-bs-theme="dark"] .hero::after{background:linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.8))}
+[data-bs-theme="dark"] .glass{background: rgba(0,0,0,.25); border-color: rgba(255,255,255,.08)}
