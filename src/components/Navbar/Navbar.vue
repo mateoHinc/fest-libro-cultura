@@ -62,11 +62,6 @@
   </nav>
 </template>
 
-<script>
-export default {
-  name: "Navbar",
-  props: {
-    theme: { type: String, default: "light" },
-  },
-};
+<script setup>
+defineProps({ theme: { type: String, default: "light" } });
 </script>
