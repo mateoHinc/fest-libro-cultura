@@ -51,6 +51,7 @@
           :key="ev.id"
         >
           <!-- Add component EventCard -->
+          <EventCard
         </div>
       </div>
 
@@ -115,8 +116,10 @@
   </section>
 </template>
 
-<script>
-export default {};
+<script setup>
+import { computed, ref, watch } from "vue";
+import EventCard from "./EventCard.vue";
+import * as bootstrap from "bootstrap";
 </script>
 
 <style></style>
