@@ -2,7 +2,7 @@ export const eventsData = [
   {
     id: 1,
     title: "Apertura: Medellín lee en voz alta",
-    day: "Vie 5 Sep",
+    day: "Vie 12 Sep",
     time: "10:30",
     venue: "Jardín Botánico · Pabellón Central",
     type: "Ceremonia",
@@ -13,7 +13,7 @@ export const eventsData = [
   {
     id: 2,
     title: "Conversación: Ciencia y ficción en Latinoamérica",
-    day: "Vie 5 Sep",
+    day: "Vie 12 Sep",
     time: "16:00",
     venue: "Parque Explora · Auditorio",
     type: "Charla",
@@ -24,7 +24,7 @@ export const eventsData = [
   {
     id: 3,
     title: "Taller de fanzines para jóvenes",
-    day: "Sáb 6 Sep",
+    day: "Sáb 13 Sep",
     time: "11:00",
     venue: "Jardín Botánico · Carpa Talleres",
     type: "Taller",
@@ -35,7 +35,7 @@ export const eventsData = [
   {
     id: 4,
     title: "Cuentacuentos bajo los árboles",
-    day: "Sáb 6 Sep",
+    day: "Sáb 14 Sep",
     time: "15:30",
     venue: "Jardín Botánico · Bosque de lectura",
     type: "Infantil",
@@ -45,7 +45,7 @@ export const eventsData = [
   {
     id: 5,
     title: "Poesía al anochecer",
-    day: "Dom 7 Sep",
+    day: "Dom 15 Sep",
     time: "18:30",
     venue: "Parque de los Deseos",
     type: "Recital",
@@ -55,7 +55,7 @@ export const eventsData = [
   {
     id: 6,
     title: "Mesa: Edición independiente en Colombia",
-    day: "Lun 8 Sep",
+    day: "Lun 16 Sep",
     time: "14:00",
     venue: "Jardín Botánico · Sala 2",
     type: "Mesa",
@@ -65,8 +65,52 @@ export const eventsData = [
   },
   {
     id: 7,
+    title: "Mesa: Edición independiente en Colombia",
+    day: "Lun 17 Sep",
+    time: "14:00",
+    venue: "Jardín Botánico · Sala 2",
+    type: "Mesa",
+    description:
+      "Desafíos, redes y distribución para editoriales independientes.",
+    speakers: ["Editoras invitadas"],
+  },
+  {
+    id: 8,
+    title: "Mesa: Edición independiente en Colombia",
+    day: "Mar 18 Sep",
+    time: "14:00",
+    venue: "Jardín Botánico · Sala 2",
+    type: "Mesa",
+    description:
+      "Desafíos, redes y distribución para editoriales independientes.",
+    speakers: ["Editoras invitadas"],
+  },
+  {
+    id: 9,
+    title: "Mesa: Edición independiente en Colombia",
+    day: "Mier 19 Sep",
+    time: "14:00",
+    venue: "Jardín Botánico · Sala 2",
+    type: "Mesa",
+    description:
+      "Desafíos, redes y distribución para editoriales independientes.",
+    speakers: ["Editoras invitadas"],
+  },
+  {
+    id: 10,
+    title: "Mesa: Edición independiente en Colombia",
+    day: "Jue 20 Sep",
+    time: "14:00",
+    venue: "Jardín Botánico · Sala 2",
+    type: "Mesa",
+    description:
+      "Desafíos, redes y distribución para editoriales independientes.",
+    speakers: ["Editoras invitadas"],
+  },
+  {
+    id: 11,
     title: "Cierre musical y despedida",
-    day: "Dom 14 Sep",
+    day: "Vie 21 Sep",
     time: "19:00",
     venue: "Parque de los Deseos",
     type: "Concierto",

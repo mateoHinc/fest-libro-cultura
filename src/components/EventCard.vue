@@ -1,4 +1,3 @@
-import { default } from './EventCard.vue';
 <template>
   <div class="h-100 card card-hover">
     <div class="d-flex flex-column card-body">
@@ -33,7 +32,7 @@ import { default } from './EventCard.vue';
         </li>
         <li class="mb-1" v-if="ev.speakers?.length">
           <i class="me-2 bi bi-mic" aria-hidden="true"></i>
-          {{ ev.speaker.join(", ") }}
+          {{ ev.speakers.join(", ") }}
         </li>
       </ul>
       <div class="d-flex gap-2 mt-auto">

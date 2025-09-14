@@ -2,21 +2,42 @@
   <div>
     <Navbar :theme="theme" @toggle-theme="toggleTheme" />
     <Hero :countdown="countdown" />
+    <ProgramSection
+      :events="events"
+      v-model:search="search"
+      v-model:filters="filters"
+      :bookmarked="bookmarked"
+      @toggle-bookmark="toggleBookmark"
+      @add-to-calendar="addToCalendar"
+    />
   </div>
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
+import { onMounted, reactive, ref } from "vue";
 
 import Navbar from "./components/Navbar/Navbar.vue";
 import Hero from "./components/Hero.vue";
+import ProgramSection from "./components/ProgramSection.vue";
 
 import { useTheme } from "./composables/useTheme";
 import { useCountdown } from "./composables/useCountdown";
+import { useBookmarks } from "./composables/useBookmarks";
+import { eventsData, guestsData, galleryData, newsData } from "./data/index.js";
 
 const { theme, toggleTheme } = useTheme();
-const festivalStart = ref(new Date("2025-09-12T10:00:00-05:00"));
+const festivalStart = ref(new Date("2026-09-12T10:00:00-05:00"));
 const countdown = useCountdown(festivalStart);
+
+const search = ref("");
+const filters = reactive({ day: "", venue: "", type: "" });
+
+const { bookmarked, toggleBookmark, isBookmarked } = useBookmarks();
+
+const events = ref(eventsData);
+const guests = ref(guestsData);
+const gallery = ref(galleryData);
+const news = ref(newsData);
 
 // onMounted(() => {
 //   document.documentElement.setAttribute("data-bs-theme", theme.value);
