@@ -10,6 +10,7 @@
       @toggle-bookmark="toggleBookmark"
       @add-to-calendar="addToCalendar"
     />
+    <GuestsSection :guests="guests" />
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import { onMounted, reactive, ref } from "vue";
 import Navbar from "./components/Navbar/Navbar.vue";
 import Hero from "./components/Hero.vue";
 import ProgramSection from "./components/ProgramSection.vue";
+import GuestsSection from "./components/GuestsSection.vue";
 
 import { useTheme } from "./composables/useTheme";
 import { useCountdown } from "./composables/useCountdown";
