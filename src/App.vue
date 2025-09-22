@@ -11,6 +11,7 @@
       @add-to-calendar="addToCalendar"
     />
     <GuestsSection :guests="guests" />
+    <MapSection />
   </div>
 </template>
 
@@ -21,6 +22,7 @@ import Navbar from "./components/Navbar/Navbar.vue";
 import Hero from "./components/Hero.vue";
 import ProgramSection from "./components/ProgramSection.vue";
 import GuestsSection from "./components/GuestsSection.vue";
+import MapSection from "./components/MapSection.vue";
 
 import { useTheme } from "./composables/useTheme";
 import { useCountdown } from "./composables/useCountdown";
