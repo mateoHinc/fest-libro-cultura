@@ -9,7 +9,7 @@
       </div>
       <div
         id="carouselGaleria"
-        class="shadow-sm rounded-4 overflow-hidden carousel-slide"
+        class="shadow-sm rounded-4 overflow-hidden carousel slide"
       >
         <div class="carousel-inner">
           <div
@@ -18,8 +18,8 @@
             v-for="(g, i) in items"
             :key="g.src"
           >
-            <img :src="g.src" :alt="g.alt" class="d-block w-100" />
-            <div class="d-md-block carousel-caption d">
+            <img :src="g.src" class="d-block w-100" :alt="g.alt" />
+            <div class="d-md-block carousel-caption d-none">
               <h5 class="fw-bold">{{ g.caption }}</h5>
             </div>
           </div>

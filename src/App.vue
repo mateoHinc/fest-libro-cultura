@@ -12,6 +12,7 @@
     />
     <GuestsSection :guests="guests" />
     <MapSection />
+    <GallerySection :gallery="gallery" />
   </div>
 </template>
 
@@ -23,6 +24,7 @@ import Hero from "./components/Hero.vue";
 import ProgramSection from "./components/ProgramSection.vue";
 import GuestsSection from "./components/GuestsSection.vue";
 import MapSection from "./components/MapSection.vue";
+import GallerySection from "./components/GallerySection.vue";
 
 import { useTheme } from "./composables/useTheme";
 import { useCountdown } from "./composables/useCountdown";
