@@ -14,6 +14,7 @@
     <MapSection />
     <GallerySection :gallery="gallery" />
     <NewsletterSection @subscribe="subscribe" />
+    <FAQSection />
   </div>
 </template>
 
@@ -27,6 +28,7 @@ import GuestsSection from "./components/GuestsSection.vue";
 import MapSection from "./components/MapSection.vue";
 import GallerySection from "./components/GallerySection.vue";
 import NewsletterSection from "./components/NewsletterSection.vue";
+import FAQSection from "./components/FAQSection.vue";
 
 import { useTheme } from "./composables/useTheme";
 import { useCountdown } from "./composables/useCountdown";
