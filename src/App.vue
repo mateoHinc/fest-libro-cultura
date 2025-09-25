@@ -13,6 +13,7 @@
     <GuestsSection :guests="guests" />
     <MapSection />
     <GallerySection :gallery="gallery" />
+    <NewsletterSection @subscribe="subscribe" />
   </div>
 </template>
 
@@ -25,6 +26,7 @@ import ProgramSection from "./components/ProgramSection.vue";
 import GuestsSection from "./components/GuestsSection.vue";
 import MapSection from "./components/MapSection.vue";
 import GallerySection from "./components/GallerySection.vue";
+import NewsletterSection from "./components/NewsletterSection.vue";
 
 import { useTheme } from "./composables/useTheme";
 import { useCountdown } from "./composables/useCountdown";
@@ -44,6 +46,11 @@ const events = ref(eventsData);
 const guests = ref(guestsData);
 const gallery = ref(galleryData);
 const news = ref(newsData);
+
+function subscribe(email) {
+  if (!email) return;
+  alert(`¡Gracias! Te enviaremos novedades a: ${email}`);
+}
 
 // onMounted(() => {
 //   document.documentElement.setAttribute("data-bs-theme", theme.value);
