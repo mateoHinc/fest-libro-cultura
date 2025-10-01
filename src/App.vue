@@ -15,6 +15,7 @@
     <GallerySection :gallery="gallery" />
     <NewsletterSection @subscribe="subscribe" />
     <FAQSection />
+    <ContactSection @send="sendMessage" />
   </div>
 </template>
 
@@ -29,6 +30,7 @@ import MapSection from "./components/MapSection.vue";
 import GallerySection from "./components/GallerySection.vue";
 import NewsletterSection from "./components/NewsletterSection.vue";
 import FAQSection from "./components/FAQSection.vue";
+import ContactSection from "./components/ContactSection.vue";
 
 import { useTheme } from "./composables/useTheme";
 import { useCountdown } from "./composables/useCountdown";
@@ -52,6 +54,15 @@ const news = ref(newsData);
 function subscribe(email) {
   if (!email) return;
   alert(`¡Gracias! Te enviaremos novedades a: ${email}`);
+}
+
+function sendMessage(payload) {
+  const { name, email, message } = payload;
+  if (!name || !email || !message) {
+    alert("Por favor completa el formulario.");
+    return;
+  }
+  alert("¡Gracias por escribirnos! Te responderemos pronto.");
 }
 
 // onMounted(() => {
