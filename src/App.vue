@@ -16,6 +16,7 @@
     <NewsletterSection @subscribe="subscribe" />
     <FAQSection />
     <ContactSection @send="sendMessage" />
+    <FooterBar />
   </div>
 </template>
 
@@ -31,6 +32,7 @@ import GallerySection from "./components/GallerySection.vue";
 import NewsletterSection from "./components/NewsletterSection.vue";
 import FAQSection from "./components/FAQSection.vue";
 import ContactSection from "./components/ContactSection.vue";
+import FooterBar from "./components/FooterBar.vue";
 
 import { useTheme } from "./composables/useTheme";
 import { useCountdown } from "./composables/useCountdown";
